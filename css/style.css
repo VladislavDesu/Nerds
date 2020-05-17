@@ -1174,6 +1174,25 @@ img {
     line-height: 18px;
 }
 
+.modal-write-us__form input[type="text"]:hover,
+.modal-write-us__form input[type="email"]:hover,
+.modal-write-us__form textarea:hover {
+    border-color: #b4b9bb;
+}
+
+.modal-write-us__form input[type="text"]:focus,
+.modal-write-us__form input[type="email"]:focus,
+.modal-write-us__form textarea:focus {
+    border-color: #000000;
+}
+
+.modal-write-us__form input[type="text"]:invalid,
+.modal-write-us__form input[type="email"]:invalid,
+.modal-write-us__form textarea:invalid {
+    color: #e74246;
+    border-color: #e74246;
+}
+
 .modal-write-us__form textarea {
     width: 100%;
     height: 118px;
