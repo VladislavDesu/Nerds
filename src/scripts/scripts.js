@@ -4,7 +4,7 @@ var link = document.querySelector(".contacts__btn");
 var overlayPopup = document.querySelector(".modal-overlay");
 var form = feedbackPopup.querySelector(".modal-write-us__form");
 var promoBg = document.querySelectorAll(".promo__item");
-var btnSlide = document.querySelectorAll(".slider-indicator");
+
 var login = feedbackPopup.querySelector("[name=name]");
 var email = feedbackPopup.querySelector("[name=email]");
 var feedbackText = feedbackPopup.querySelector("[name=feedback]");
@@ -69,32 +69,3 @@ window.addEventListener("keydown", function(event) {
     }
 });
 
-btnSlide[0].addEventListener("click", function(event) {
-    event.preventDefault();
-    promoBg[0].classList.add("promo__item--show");
-    promoBg[1].classList.remove("promo__item--show");
-    promoBg[2].classList.remove("promo__item--show");
-    btnSlide[0].classList.add("slider-indicator--show");
-    btnSlide[1].classList.remove("slider-indicator--show");
-    btnSlide[2].classList.remove("slider-indicator--show");
-});
-
-btnSlide[1].addEventListener("click", function(event) {
-    event.preventDefault();
-    promoBg[1].classList.add("promo__item--show");
-    promoBg[0].classList.remove("promo__item--show");
-    promoBg[2].classList.remove("promo__item--show");
-    btnSlide[1].classList.add("slider-indicator--show");
-    btnSlide[0].classList.remove("slider-indicator--show");
-    btnSlide[2].classList.remove("slider-indicator--show");
-});
-
-btnSlide[2].addEventListener("click", function(event) {
-    event.preventDefault();
-    promoBg[2].classList.add("promo__item--show");
-    promoBg[0].classList.remove("promo__item--show");
-    promoBg[1].classList.remove("promo__item--show");
-    btnSlide[2].classList.add("slider-indicator--show");
-    btnSlide[0].classList.remove("slider-indicator--show");
-    btnSlide[1].classList.remove("slider-indicator--show");
-});
